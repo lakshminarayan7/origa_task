@@ -49,7 +49,7 @@ exports.getInfo = async () => {
         {
             $project: {
                 _id: 0,
-                "name": "$Users.name",
+                name: "$Users.name",
                 userId: "$_id",
                 noOfOrders: 1,
                 averageBillValue: 1
