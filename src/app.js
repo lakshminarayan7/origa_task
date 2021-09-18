@@ -14,7 +14,7 @@ mongoose.connect('mongodb://localhost:27017/origa_task', { useNewUrlParser: true
     .then(re => console.log('Connected to origa_task DB...'))
     .catch(err => console.log(err));
 
-// app.use('/tasks', require('./controller/taskList-controller'));
+app.use('/tasks', require('./controller/taskList-controller'));
 
 
 app.get('/', function (req, res) {
